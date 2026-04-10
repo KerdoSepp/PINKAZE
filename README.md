@@ -9,7 +9,8 @@ Made this readme and enslaved Kerdo.
 Generated webpage through OpenAI, youtube embeds, changed design, made the title, background. So basically all the code, cus Kert's a dumbass.
 
 
-¤-PROMPTS-¤
+-PROMPTS-
+
 the general idea: 
 I need you to create me 5 kpop girlgroup characters, they have a main singer too, names and backstory are you to choose, 
 also create me their images and also make me two of their song's thumbnails (Touchin the sun) (Glitter after Tears). 
