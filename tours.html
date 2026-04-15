@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/x-icon" href="/public/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <script type="module" src="/tours.js"></script>
 </head>
 
 <body class="bg-black text-white">
@@ -20,7 +21,6 @@
        <img src="public/Icon.png" class="h-7" alt="PINKAZE Logo" />
         <span class="self-center text-xl text-heading font-semibold whitespace-nowrap font-cinzel"  style="font-family: 'Cinzel', serif;">PINKAZE</span>
     </a>
-    
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
@@ -31,10 +31,10 @@
           <a href="/index.html" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#members" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+          <a href="/index.html#members" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
         </li>
                 <li>
-          <a href="#songs" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Songs</a>
+          <a href="/index.html#members#songs" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Songs</a>
         </li>
                 <li>
           <a href="/tours.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Tours</a>
@@ -57,30 +57,18 @@
   id="band-name" 
   class="relative z-10 text-5xl md:text-9xl font-cinzel"
   style="font-family: 'Cinzel', serif;"
-  ></h1>
+  >TOURS</h1>
 
 </section>
-  <section class="min-h-1/2 px-6 md:px-20 py-20 bg-gray-900">
-    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
-    <p id="story" class="max-w-3xl text-lg"></p>
-  </section>
-
-
   <section class="min-h-screen px-6 md:px-20 py-20">
-    <h2 class="text-3xl font-bold mb-10">Members</h2>
-    <div id="members" class="grid md:grid-cols-3 gap-10"></div>
+    <div id="tours" class="grid md:grid-cols-2 gap-10"></div>
   </section>
 
-  <section class="min-h-screen px-6 md:px-20 py-20 bg-gray-900">
-    <h2 class="text-3xl font-bold mb-10">Songs</h2>
-    <div id="songs" class="space-y-4"></div>
-    
-  </section>
 
   <footer class="text-center py-10 text-gray-500 text-sm">
     © <span id="year"></span> <span id="footer-name"></span>
   </footer>
   
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/tours.js"></script>
 </body>
 </html>

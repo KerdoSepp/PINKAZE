@@ -46,13 +46,18 @@ Their signature style blends high-fashion aesthetic with cinematic music videos 
   ],
 };
 
-// SET BASIC INFO
+const button = document.querySelector('[data-collapse-toggle]')
+const menu = document.getElementById('navbar-default')
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden')
+})
+
 document.getElementById("band-name").textContent = band.name;
 document.getElementById("story").textContent = band.story;
 document.getElementById("footer-name").textContent = band.name;
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// RENDER MEMBERS
 const membersContainer = document.getElementById("members");
 
 band.members.forEach((member) => {
@@ -72,7 +77,6 @@ band.members.forEach((member) => {
   membersContainer.appendChild(card);
 });
 
-// RENDER SONGS
 const songsContainer = document.getElementById("songs");
 
 band.songs.forEach((song) => {
