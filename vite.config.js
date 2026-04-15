@@ -1,14 +1,15 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 import tailwindcss from '@tailwindcss/vite'
 
-export default {
-  content: ["./index.html","./tours.html", "./src/**/*.{js,ts,html}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        cinzel: ["Cinzel", "serif"],
+export default defineConfig({
+  plugins: [tailwindcss()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        tours: resolve(__dirname, 'tours.html'),
       },
     },
   },
-  plugins: [tailwindcss()],
-}
+})
