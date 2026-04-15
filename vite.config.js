@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig({
-  content: ["./index.html", "./src/**/*.js"],
-
+export default {
+  content: ["./index.html","./tours.html", "./src/**/*.{js,ts,html}"],
   theme: {
     extend: {
       fontFamily: {
@@ -11,7 +10,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [
-    tailwindcss(),
-  ],
-})
+  plugins: [tailwindcss()],
+}

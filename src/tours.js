@@ -8,13 +8,13 @@ const band = {
       title: "Glitter Tour",
       year: "2026",
       description: "A high-energy spectacle drenched in neon lights, shimmering visuals, and explosive performances. The Glitter Tour transforms every stage into a sparkling dream where synth beats and electric vibes collide.",
-      image: "src/assets/GlitterTour.jpg",
+      image: "public/GlitterTour.jpg",
     },
     { 
       title: "Sun Tour",
       year: "2026",
       description: "A warm, atmospheric journey inspired by golden sunsets and endless summer nights. The Sun Tour blends emotional melodies with radiant visuals, creating an immersive and unforgettable experience.",
-      image: "src/assets/SunTour.jpg",
+      image: "public/SunTour.jpg",
     },
   ],
 };
